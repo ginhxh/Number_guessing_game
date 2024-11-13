@@ -31,19 +31,53 @@
         margin-top: 20px;
         font-weight: bold;
       }
+      button {
+      }
+      .submitGuess {
+        background-color: rgb(31, 244, 46);
+      }
+      .startt {
+        background-color: rgb(244, 102, 31);
+      }
+      .rest {
+        background-color: rgb(31, 98, 244);
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 2px auto;
+        background-color: aquamarine;
+        font-weight: 700;
+        font-size: 24px;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h2>Guess the Number</h2>
-      <p>Guess the number between 1 and 100!</p>
-      <input type="number" class="guessInput" placeholder="Enter your guess" />
-      <div>
-        <button class="submitGuess">Submit Guess</button>
-        <button class="rest">reset</button>
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <div class="container">
+        <h2>Guess the Number</h2>
+        <h4>45</h4>
+        <p class="pss">Guess the number between 1 and 100!</p>
+        <input
+          type="number"
+          class="guessInput"
+          placeholder="Enter your guess"
+        />
+        <div>
+          <button class="submitGuess">Submit</button>
+          <button class="startt">Start</button>
+          <button class="rest">reset</button>
+        </div>
+        <p class="feedback"></p>
+        <p class="attemptes"></p>
       </div>
-      <p class="feedback"></p>
-      <p class="attemptes"></p>
+
+      <div>
+        <ul>
+          <li style="list-style: none"></li>
+        </ul>
+      </div>
     </div>
 
     <script src="js.js"></script>
